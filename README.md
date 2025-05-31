@@ -4,21 +4,20 @@
 
 Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School e atuo na Stefanini Group na área de dados pela célula do Banco do Brasil. Sou apaixonado por tecnologia e compartilho meu conhecimento através do site pessoal "[vitorluzz.github.io](vitorluzz.github.io)", onde falo um pouco sobre mim, ensino sobre o universo de dados.
 
-    <a href="https://github.com/vitorluzz?tab=repositories&sort=stargazers">
+<a href="https://github.com/vitorluzz?tab=repositories&sort=stargazers">
         <img 
             alt="Total de estrelas" 
             title="Total de estrelas GitHub" 
             src="https://custom-icon-badges.demolab.com/github/stars/vitorluzz?color=55960c&style=for-the-badge&labelColor=488207&logo=star&label=estrelas"
         />
-    </a>
-    <a href="https://github.com/vitorluzz?tab=followers">
+</a>
+<a href="https://github.com/vitorluzz?tab=followers">
         <img 
             alt="Seguidores" 
             title="Me siga no GitHub" 
             src="https://custom-icon-badges.demolab.com/github/followers/vitorluzz?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
         />
     </a>
-</p>
 
 ---
 

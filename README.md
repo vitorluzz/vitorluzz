@@ -2,7 +2,7 @@
 
 **`Analista de Dados - BI & Analytics`**
 
-Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School e atuo na Stefanini Group na área de dados pela célula do Banco do Brasil. Sou apaixonado por tecnologia e compartilho meu conhecimento através do site pessoal "[vitorluzz.github.io](vitorluzz.github.io)", onde falo um pouco sobre mim, ensino sobre o universo de dados.
+Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School e atuo na Stefanini Group na área de dados pela célula do Banco do Brasil. Sou apaixonado por tecnologia e compartilho meu conhecimento através do site pessoal "[vitorluzz.github.io](https://vitorluzz.github.io)", onde falo um pouco sobre mim, ensino sobre o universo de dados.
 
 <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-luz-6b2109340/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://github.com/vitorluzz?tab=repositories&sort=stargazers">

@@ -1,20 +1,22 @@
-# 👨‍💻 João Vitor Luz
+# Hi, there 👋🏼
 
-**`Analista de Dados - BI & Analytics`**
+**`Data Engineer - BI & Analytics`**
 
-Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School e atuo na Stefanini Group na área de dados pela célula do Banco do Brasil. Sou apaixonado por tecnologia e compartilho meu conhecimento através do meu site pessoal "[vitorluzz.github.io](https://vitorluzz.github.io)", onde falo um pouco sobre mim e ensino sobre o universo de dados.
+- I am, João Vitor Luz
+- I transform data into strategic insights.
+- My passion is writing code and turning it into solutions.
 
-<a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-luz-6b2109340/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/vitorluzz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://github.com/vitorluzz?tab=repositories&sort=stargazers">
         <img 
             alt="Total de estrelas" 
-            title="Total de estrelas GitHub" 
+            title="Stars" 
             src="https://custom-icon-badges.demolab.com/github/stars/vitorluzz?color=55960c&style=for-the-badge&labelColor=488207&logo=star&label=estrelas"
         />
 </a>
 <a href="https://github.com/vitorluzz?tab=followers">
         <img 
-            alt="Seguidores" 
+            alt="Followers" 
             title="Me siga no GitHub" 
             src="https://custom-icon-badges.demolab.com/github/followers/vitorluzz?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
         />
@@ -22,24 +24,6 @@ Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Aná
 
 ---
 
-### 🤖 Linguagens e Tecnologias
-
-<img 
-    align="left" 
-    alt="HTML"
-    title="HTML" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="CSS" 
-    title="CSS"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
-/>
 <img 
     align="left" 
     alt="JavaScript" 
@@ -56,14 +40,7 @@ Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Aná
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
 />
-<img 
-    align="left" 
-    alt="Bootstrap"
-    title="Bootstrap" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
-/>
+
 <img 
     align="left" 
     alt="Git" 
@@ -184,26 +161,6 @@ Me chamo João Vitor Luz, tenho 21 anos e sou de São Paulo. Estou cursando Aná
 />                                                                                  
 <br/>
 <br/>
-
-### 📊 Estatísticas
-
-<p>
-  <img 
-    align="left" 
-    alt="GitHub Stats" 
-    height="200" 
-    style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=vitorluzz&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
-
-<img 
-      align="left" 
-      alt="GitHub Stats" 
-      height="200" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=vitorluzz&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
-  />
-
-</p>
 
 <picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vitorluzz/vitorluzz/output/github-contribution-grid-snake-dark.svg">

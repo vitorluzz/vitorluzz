@@ -13,6 +13,8 @@ No third-party dependencies required.
 """
 import os
 import html
+import json
+import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ART_PATH = os.path.join(HERE, "ascii_art.txt")
@@ -173,13 +175,78 @@ text, tspan {{white-space: pre;}}
 </svg>
 '''
 
+def fetch_stats():
+    """Fetch live GitHub stats. Any field that fails falls back to the constants
+    above. Uses GH_TOKEN or GITHUB_TOKEN (env) for the GraphQL contributions query.
+    Set NO_FETCH=1 to skip network access and use the constants as-is."""
+    user = HOST_USER
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+
+    def rest(url):
+        headers = {"User-Agent": f"{user}-profile", "Accept": "application/vnd.github+json"}
+        if token:
+            headers["Authorization"] = "Bearer " + token
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)
+
+    stats = {}
+    try:
+        u = rest(f"https://api.github.com/users/{user}")
+        stats["repos"] = str(u["public_repos"])
+        stats["followers"] = str(u["followers"])
+    except Exception as e:
+        print("warn: user fetch failed:", e)
+    try:
+        total, page = 0, 1
+        while True:
+            repos = rest(f"https://api.github.com/users/{user}/repos?per_page=100&page={page}&type=owner")
+            if not repos:
+                break
+            total += sum(r["stargazers_count"] for r in repos)
+            if len(repos) < 100:
+                break
+            page += 1
+        stats["stars"] = str(total)
+    except Exception as e:
+        print("warn: stars fetch failed:", e)
+    if token:
+        try:
+            q = ('query{user(login:"%s"){contributionsCollection{'
+                 'contributionCalendar{totalContributions} '
+                 'totalRepositoriesWithContributedCommits}}}' % user)
+            body = json.dumps({"query": q}).encode()
+            req = urllib.request.Request(
+                "https://api.github.com/graphql", data=body,
+                headers={"User-Agent": f"{user}-profile",
+                         "Authorization": "Bearer " + token,
+                         "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                cc = json.load(r)["data"]["user"]["contributionsCollection"]
+            stats["contributions"] = str(cc["contributionCalendar"]["totalContributions"])
+            stats["contrib"] = str(cc["totalRepositoriesWithContributedCommits"])
+        except Exception as e:
+            print("warn: contributions (GraphQL) fetch failed:", e)
+    return stats
+
+
 def main():
+    global REPOS, CONTRIB, STARS, CONTRIBUTIONS, FOLLOWERS
+    if os.environ.get("NO_FETCH") != "1":
+        s = fetch_stats()
+        REPOS = s.get("repos", REPOS)
+        STARS = s.get("stars", STARS)
+        FOLLOWERS = s.get("followers", FOLLOWERS)
+        CONTRIBUTIONS = s.get("contributions", CONTRIBUTIONS)
+        CONTRIB = s.get("contrib", CONTRIB)
+        print(f"stats: repos={REPOS} stars={STARS} followers={FOLLOWERS} "
+              f"contributions={CONTRIBUTIONS} contributed={CONTRIB}")
     art = load_ascii()
     for theme in ("dark", "light"):
         out = os.path.join(HERE, f"{theme}_mode.svg")
         with open(out, "w", encoding="utf-8") as f:
             f.write(build(art, theme))
-        print("wrote", out, "| ascii", len(art), "rows x", max(len(r) for r in art), "cols")
+        print("wrote", out)
 
 if __name__ == "__main__":
     main()
